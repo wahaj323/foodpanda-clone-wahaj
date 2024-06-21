@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="foodPanda.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="logodiv">
+                    <div class="logo">
+                        <img width="145" height="28"
+                            src="data:image/png;base64,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"
+                            alt="">
+                    </div>
+                </div>
+                <div class="end">
+                    <button id="login">Log in</button>
+                    <button id="signup">Sign up</button>
+                    <img height="18" width="18"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHZkTsrJlQ5d65x3dD3pwuA3RT4dAnmB2rAQ&s"
+                        alt="">
+                    <select name="" id="">EN
+                        <option value="">EN</option>
+                    </select>
+                    <svg id="cart" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12.0021 2C14.5418 2 16.4241 3.6512 16.5538 6.15854H19.8491C20.4014 6.15854 20.8491 6.60625 20.8491 7.15854C20.8491 7.20585 20.8457 7.25311 20.8391 7.29996L19.1248 19.1414C19.0544 19.6341 18.6325 20 18.1348 20H5.86942C5.37176 20 4.94984 19.6341 4.87947 19.1414L3.16518 7.29996C3.08707 6.75322 3.46697 6.24669 4.0137 6.16859C4.06055 6.16189 4.10781 6.15854 4.15513 6.15854L7.36129 6.16397C7.49108 3.65663 9.46248 2 12.0021 2ZM17.5607 16.25H6.44235C6.22143 16.25 6.04235 16.4291 6.04235 16.65C6.04235 16.669 6.04369 16.6879 6.04638 16.7067L6.25397 18.1567C6.28217 18.3537 6.45092 18.5 6.64993 18.5H17.3533C17.5523 18.5 17.7211 18.3537 17.7492 18.1566L17.9567 16.7066C17.988 16.488 17.836 16.2853 17.6174 16.254C17.5986 16.2513 17.5797 16.25 17.5607 16.25ZM18.8109 7.65854H5.19233C4.97142 7.65854 4.79233 7.83762 4.79233 8.05854C4.79233 8.32251 4.79367 8.09637 4.79635 8.11511L5.71793 14.4066C5.74609 14.6036 5.91486 14.75 6.11391 14.75H17.8891C18.0882 14.75 18.2569 14.6036 18.2851 14.4066L19.2069 8.11513C19.2381 7.89643 19.0862 7.69381 18.8675 7.66256C18.8487 7.65988 18.8298 7.65854 18.8109 7.65854ZM12.0021 3.40323C10.4163 3.40323 9.15495 4.32251 8.91234 5.80175C8.88507 5.96802 8.98943 6.12701 9.15495 6.15854C9.17377 6.16212 9.19289 6.16392 9.21204 6.1639L14.7134 6.15847C14.8772 6.15843 15.0099 6.02566 15.0099 5.86189C15.0099 5.84361 14.9631 5.82209 15.0049 5.80742C14.655 4.32251 13.5918 3.40323 12.0021 3.40323Z">
+                        </path>
+                    </svg>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="main">
+            <div id="maintest">
+                <p>It's the food and groceries you love,<br> delivered</p>
+                <div id="search">
+                    <input id="t1" type="text" placeholder="Your street and street number">
+                    <button id="ff">Find food</button>
+                </div>
+            </div>
+            <div id="mainpic">
+                <img height="556" width="720" src="refresh-hero-home-pk.png" alt="">
+            </div>
+
+        </div>
+
+        <h1 id="t2">You prepare the food, we handle the rest</h1>
+        <div id="chef">
+
+        </div>
+        <div class="box2">
+            <p id="hed">List your restaurant or shop on foodpanda</p>
+            <p id="t3">Would you like millions of new customers to enjoy your amazing food and groceries? So would we!
+                <br> <br>
+
+                It's simple: we list your menu and product lists online, help you process orders, pick them up, and
+                deliver them to hungry pandas – in a heartbeat! <br> <br>
+
+                Interested? Let's start our partnership today!
+            </p>
+
+            <button id="t3but">Get started</button>
+
+        </div>
+
+        <div id="tcity">
+            <h1>Find us in these cities and many more!</h1>
+        </div>
+
+        <div id="city">
+            <div class="cities" id="p1">
+                <p id="c1">Islamabad</p>
+            </div>
+            <div class="cities" id="p2">
+                <p id="c2">Karachi</p>
+            </div>
+            <div class="cities" id="p3">
+                <p id="c3">Lahore</p>
+            </div>
+            <div class="cities" id="p4">
+                <p id="c4">Faislabad</p>
+            </div>
+            <div class="cities" id="p5">
+                <p id="c5">Rawalpindi</p>
+            </div>
+            <div class="cities" id="p6">
+                <p id="c6">Abbotabad</p>
+            </div>
+            <div class="cities" id="p7">
+                <p id="c7">Bhawalpur</p>
+            </div>
+            <div class="cities" id="p8">
+                <p id="c8">Dera Ghazi Khan</p>
+            </div>
+            <div class="cities" id="p9">
+                <p id="c9">Gunjranwala</p>
+            </div>
+            <div class="cities" id="p10">
+                <p id="c10">Gujrat</p>
+            </div>
+            <div class="cities" id="p11">
+                <p id="c11">Hyderabad</p>
+            </div>
+            <div class="cities" id="p12">
+                <p id="c12">Jhelum</p>
+            </div>
+            <div class="cities" id="p13">
+                <p id="c13">Kamoke</p>
+            </div>
+            <div class="cities" id="p14">
+                <p id="c14">Larkana</p>
+            </div>
+            <div class="cities" id="p15">
+                <p id="c15">Mangla</p>
+            </div>
+            <div class="cities" id="p16">
+                <p id="c16">Mardan</p>
+            </div>
+            <div class="cities" id="p17">
+                <p id="c17">Multan</p>
+            </div>
+            <div class="cities" id="p18">
+                <p id="c18">Murree</p>
+            </div>
+            <div class="cities" id="p19">
+                <p id="c19">Okara</p>
+            </div>
+            <div class="cities" id="p20">
+                <p id="c20">Pano Aqil</p>
+            </div>
+            <div class="cities" id="p21">
+                <p id="c21">Peshawar</p>
+            </div>
+            <div class="cities" id="p22">
+                <p id="c22">Quetta</p>
+            </div>
+            <div class="cities" id="p23">
+                <p id="c23">Rahim Yar Khan</p>
+            </div>
+            <div class="cities" id="p24">
+                <p id="c24">Sadiqabad</p>
+            </div>
+            <div class="cities" id="p25">
+                <p id="c25">Sahiwal</p>
+            </div>
+            <div class="cities" id="p26">
+                <p id="c26">Sargodha</p>
+            </div>
+            <div class="cities" id="p27">
+                <p id="c27">Sheikhupura</p>
+            </div>
+            <div class="cities" id="p28">
+                <p id="c28">Sialkot</p>
+            </div>
+            <div class="cities" id="p29">
+                <p id="c29">Sukkur</p>
+            </div>
+            <div class="cities" id="p30">
+                <p id="c30">Wah Cannt</p>
+            </div>
+
+
+        </div>
+
+        <div id="pic2">
+            <h1>Put us in your pocket</h1>
+        </div>
+
+        <div id="pic2c">
+            <div id="tpic2">
+                <h2>Download the food and groceries you love</h2>
+                <div id="picture">
+
+                </div>
+            </div>
+            <div id="qr1">
+
+            </div>
+            <div id="qrtext">
+                <p>It's all at your fingertips - the restaurants and <br> shops you love. Find the right food and <br>
+                    groceries to suit your mood, and make the <br> first bite last. Go ahead, download us. </p>
+            </div>
+
+            <div id="stores">
+                <div id="ap1"></div>
+                <div id="ap2"></div>
+                <div id="ap3"></div>
+            </div>
+        </div>
+
+
+        <div id="textp3">
+            <br><br><br><br><br><br>
+            <h1>Take your office out to lunch</h1>
+        </div>
+
+        <div id="lastpic">
+
+        </div>
+        <div id="lastpictext">
+            <h2>foodpanda for business</h2>
+            <p id="lasttextfont">Order lunch or fuel for work-from-home, late nights in the <br> office, corporate
+                events, client meetings, and much more.</p>
+            <button id="t4but">Get started</button>
+        </div>
+
+        <div id="details">
+            <h1 class="head">Order food and groceries online from the best restaurants and shops on <br> foodpanda</h1>
+            <p>Are you hungry? Did you have a long and stressful day? Interested in getting a cheesy pizza delivered to
+                your office or looking to avoid the weekly shop? Then foodpanda Pakistan is the right destination for
+                you! foodpanda offers you a long and detailed list of the best restaurants and shops near you to help
+                make your every day easier.</p>
+            <h1 class="head">What's new?</h1>
+            ✓ Wide variety of restaurants and shops, an abundance of cuisines & products. <br>
+            ✓ High quality delivery service. <br>
+            ✓ Live chat feature to give App users instant help when they need it. <br>
+            ✓ NEW: foodpanda grocery delivery! Discover the best shops, pharmacies, bakeries and more near you. <br>
+
+            <hr>
+            <h1>Frequently Asked Questions</h1>
+            <h2>How can I get foodpanda delivery?</h2>
+            <p>To get foodpanda delivery, simply locate the restaurants and shops near you by typing in your address,
+                browse through a variety of restaurants and cuisines, check menus and prices, choose your dishes and add
+                them to the basket. Now you only need to checkout and make the payment. Soon your delicious food will
+                arrive at your doorstep!</p>
+            <h2>Which takeout restaurants open now near me?</h2>
+            <p>You can check which takeout restaurants are open now near you by simply typing your address in the
+                location bar on foodpanda and pressing search. You will see all the available restaurants and shops that
+                deliver to your area.</p>
+            <h2>Does foodpanda deliver 24 hours?</h2>
+            <p>Yes, foodpanda in Pakistan delivers 24 hours. However, many restaurants may be unavailable for a
+                late-night delivery. Please check which places in Pakistan deliver to you within 24 hours by using your
+                address. You can also order groceries 24 hours a day via pandamart.</p>
+            <h2>Can you pay cash for foodpanda?</h2>
+            <p>Yes, you can pay cash on delivery for foodpanda in Pakistan.</p>
+            <h2>How can I pay foodpanda online?</h2>
+            <p>You can pay online while ordering at foodpanda Pakistan by using a credit or debit card or PayPal.</p>
+            <h2>Can I order foodpanda for someone else?</h2>
+            <p>Yes, foodpanda Pakistan allows you to place an order for someone else. During checkout, just update the
+                name and delivery address of the person you're ordering for. Please keep in mind that if the delivery
+                details are not correct and the order cannot be delivered, we won't be able to process a refund.</p>
+            <h2>How much does foodpanda charge for delivery?</h2>
+            <p>Delivery fee charged by foodpanda in Pakistan depends on many operational factors, most of all - location
+                and the restaurant you are ordering from. You can always check the delivery fee while forming your
+                order. Besides, you can filter the restaurants by clicking on the "Free Delivery" icon at the top of
+                your restaurant listing.</p>
+            <h2>What restaurants let you order online?</h2>
+            <p>There are hundreds of restaurants on foodpanda Pakistan that let you order online. For example, KFC,
+                McDonald's, Pizza Hut, OPTP, Hardee's, Domino's, Kababjees and many-many more! In order to check all the
+                restaurants near you that deliver, just type in your address and discover all the available places.</p>
+            <h2>Does foodpanda have minimum order?</h2>
+            <p>Yes, many restaurants have a minimum order. The minimum order value depends on the restaurant you order
+                from and is indicated during your ordering process.</p>
+            <h2>What is the difference between delivery and Pick-Up?</h2>
+            <p>If you choose delivery, a foodpanda rider will collect your order from the restaurant and take it to your
+                chosen delivery address. If you choose Pick-Up, you can takeaway your food directly from the restaurant
+                for extra savings – and to jump to the front of the queue. Pick-Up orders are available for restaurants
+                only.</p>
+            <h2>Order food and groceries online with foodpanda now and enjoy a great dining experience!</h2>
+            <br><br><br><br><br><br>
+            <hr>
+            <div id="contries">
+                <pre>Laos   |   Cambodia   |   Myanmar   |   Thailand   |   Hong Kong   |   Taiwan   |   Malaysia   |   Philippines   |   Singapore   |   Bangladesh</pre>
+            </div>
+            <hr>
+            <div id="lastboxes">
+                <div class="boxxes">
+                    <p style="color: black;">© foodpanda</p>
+                </div>
+                <div class="boxxes">
+                    <a href="#" class="links1">Press</a> <br> <br>
+                    <a href="#" class="links1">pandapay Terms and Conditions</a> <br> <br>
+                    <a href="#" class="links1">Security</a><br> <br>
+                    <a href="#" class="links1">Careers</a> <br> <br>
+                    <a href="#" class="links1">Cashback Terms and Conditions</a> <br> <br>
+                    <a href="#" class="links1">Partner with Us</a> <br> <br>
+                    <a href="#" class="links1">All cities</a> <br><br>
+                    <a href="#" class="links1">pandapro - Monthly Subscription Programme</a> <br><br>
+                    <a href="#" class="links1">Ramzan deals</a> <br><br>
+                    <a href="#" class="links1">Areas delivered in Lahore</a> <br>
+
+
+
+                </div>
+                <div class="boxxes">
+                    <a href="#" class="links2">Help Center</a> <br><br>
+                    <a href="#" class="links2">Terms and Conditions</a> <br><br>
+                    <a href="#" class="links2">Download foodpanda Apps</a> <br><br>
+                    <a href="#" class="links2">Suggest a Restaurant</a> <br><br>
+                    <a href="#" class="links2">All cuisines</a> <br><br>
+                    <a href="#" class="links2">pandago - Request a Rider</a> <br><br>
+                    <a href="#" class="links2">Update on COVID-19 in Pakistan</a> <br><br>
+                    <a href="#" class="links2">foodpanda Home Chef</a><br><br>
+                    <a href="#" class="links2">Areas delivered in Karachi</a> <br><br>
+                    <a href="#" class="links2">Areas delivered in Islamabad</a> <br>
+
+                </div>
+                <div class="boxxes">
+                    <a href="#" class="links3">Refunds with pandapay</a> <br><br>
+                    <a href="#" class="links3">Privacy policy</a> <br><br>
+                    <a href="#" class="links3">Human rights policy</a> <br><br>
+                    <a href="#" class="links3">Corporate Customer</a> <br><br>
+                    <a href="#" class="links3">foodpanda Magazine</a> <br><br>
+                    <a href="#" class="links3">foodpanda Vouchers & Coupons</a> <br><br>
+                    <a href="#" class="links3">pandamart Grocery Delivery</a> <br><br>
+                    <a href="#" class="links3">Become an Affiliate</a> <br><br>
+                    <a href="#" class="links3">Areas delivered in Gujranwala</a> <br><br>
+                    <a href="#" class="links3">Areas delivered in Peshawar</a>
+                </div>
+            </div>
+            <hr>
+            <div id="logos">
+
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
